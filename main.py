@@ -34,6 +34,7 @@ class Node:
         for edge in self.input_edges:
             if (edge.input_node.calculated_result == None) or (not edge.input_node.calculated_result.valid) or (edge.input_node.calculated_result.evl_num != evl_num):
                 # should not happen that the node is evaluated after the current node
+                # change when we have recurrent network
                 if (edge.input_node.calculated_result != None):
                     assert(edge.input_node.calculated_result.evl_num < evl_num) 
 
