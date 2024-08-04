@@ -1,3 +1,7 @@
+# Argumented Topology Neural Network (Node-wise NN)
+This is an implementation of my research on Argumented Topology Neural Network (Node-wise NN).
+
+
 ## Suggested Set Up
 
 Create environment
@@ -10,3 +14,11 @@ Install required libs
 ```
 pip install -r requirements.txt
 ```
+
+## Examples
+I have provided some examples in the `examples` folder. You can run them by executing each file.
+
+
+### Example sample: XOR solver:
+<img src="examples/results/XOR_result_10000_epoch_lr0.1.png" width="500"/>
+
