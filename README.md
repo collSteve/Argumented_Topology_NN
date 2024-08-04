@@ -22,5 +22,6 @@ I have provided some examples in the `examples` folder. You can run them by exec
 ### Example sample: 
 #### XOR solver:
 epoch=10000, learning rate = 0.1 (fixed)
+
 <img src="examples/results/XOR_result_10000_epoch_lr0.1.png" width="500"/>
 
