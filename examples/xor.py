@@ -27,22 +27,14 @@ graph.output_nodes = [graph.get_node("O1")]
 # intermidiate nodes
 graph.add_node(Node("H1", activation="sigmoid"))
 graph.add_node(Node("H2", activation="sigmoid"))
-graph.add_node(Node("H3", activation="sigmoid"))
-graph.add_node(Node("H4", activation="sigmoid"))
 
 graph.connect("I1", "H1", np.random.rand())
 graph.connect("I2", "H1", np.random.rand())
 graph.connect("I1", "H2", np.random.rand())
 graph.connect("I2", "H2", np.random.rand())
-graph.connect("I1", "H3", np.random.rand())
-graph.connect("I2", "H3", np.random.rand())
-graph.connect("I1", "H4", np.random.rand())
-graph.connect("I2", "H4", np.random.rand())
 
 graph.connect("H1", "O1", np.random.rand())
 graph.connect("H2", "O1", np.random.rand())
-graph.connect("H3", "O1", np.random.rand())
-graph.connect("H4", "O1", np.random.rand())
 
 train_repeats = 10000
 with progressbar.ProgressBar(max_value=train_repeats) as bar:

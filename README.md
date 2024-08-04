@@ -20,5 +20,6 @@ I have provided some examples in the `examples` folder. You can run them by exec
 
 
 ### Example sample: XOR solver:
-<img src="examples/results/XOR_result_10000_epoch_lr0.1.png" width="500"/>
+<img src="examples/results/XOR_result_2_4_1_epoch_10000_lr0.1.png" width="500"/>
+<img src="examples/results/XOR_result_2_2_1_epoch_10000_lr0.1.png" width="500"/>
 
