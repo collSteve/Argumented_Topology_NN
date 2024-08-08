@@ -44,11 +44,11 @@ with progressbar.ProgressBar(max_value=train_repeats) as bar:
 
 graph.forward([0, 0], 10000)
 print(graph.get_output())
-graph.forward([1, 0], 10001)
+graph.forward([1, 0], 10000)
 print(graph.get_output())
-graph.forward([0, 1], 10002)
+graph.forward([0, 1], 10000)
 print(graph.get_output())
-graph.forward([1, 1], 10003)
+graph.forward([1, 1], 10000)
 print(graph.get_output())
 
 # draw heat map
@@ -63,7 +63,7 @@ Z = np.zeros((xmax, ymax))
 index = 0
 for i in range(xmax):
     for j in range(ymax):
-        graph.forward([x[i], y[j]], 5000000 + index)
+        graph.forward([x[i], y[j]], 0)
         Z[i, j] = graph.get_output()[0]
 
         index += 1

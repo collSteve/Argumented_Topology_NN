@@ -17,7 +17,7 @@ class Node_Result:
     def __init__(self):
         self.value = 0
         self.valid = False
-        self.evl_num = 0
+        self.evl_num = None
 
 class Node_Backprop_Values:
     def __init__(self):
@@ -252,6 +252,13 @@ class Graph:
 
         for node in self.output_nodes:
             node.calculated_result = node.cal_result(evl_num)
+
+        # reset evl_num for all node results
+        for node in self.nodes:
+            if node.calculated_result == None or not node.calculated_result.valid:
+                raise Exception("Node result not computed or not valid")
+            
+            node.calculated_result.evl_num = None
 
     def backpropagate(self, inputs: List[float], target_outputs: List[float], learning_rate: float, evl_num: int):
         self.forward(inputs, evl_num)
