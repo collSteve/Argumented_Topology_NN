@@ -29,3 +29,9 @@ epoch=10000, learning rate = 0.1 (fixed), with 2-2-1 topology
 
 <img src="examples/results/XOR_result_2_2_1_epoch_10000_lr0.1.png" width="500"/>
 
+## Current Goals:
+- [ ] Implement effective persistence (save/load) for neural network
+- [ ] Implement genetic exploration for topology optimization
+- [ ] Implement recurrence neural links
+- [ ] Implement digit recognition example
+- [ ] (stretch goal) Implement iterative version for forwarding and backpropagation (more controllable and better for future optimization)
